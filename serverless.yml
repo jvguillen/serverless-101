@@ -35,3 +35,10 @@ functions:
       - http:
           method: get
           path: hello
+  
+  goodbye:
+    handler: handler.goodbye
+    events:
+      - http:
+          method: post
+          path: goodbye
